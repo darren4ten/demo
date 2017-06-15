@@ -11,37 +11,80 @@
     <style>
         body {
             padding-top: 4px;
+            background-image: url('image/bg.jpg')
+        }
+
+        .header {
+            margin-top: 16px;
+        }
+
+        .bg-navitem-left {
+            background: url('image/head/nav-left.png') no-repeat;
+            filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+            -moz-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+
+        .bg-navitem-right {
+            background: url('image/head/nav-right.png') no-repeat;
+            filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+            -moz-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+
+        .road-nav-item-min {
+            width: 11.1%;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            color: #F5F5F3;
+            min-width: 100px;
+            float: left;
+            margin-bottom: 20px;
+            /*border: 1px solid blue;*/
+        }
+
+        .road-nav-list {
+            height: 42px;
+            margin: auto 44px;
+            background: url('image/head/title.png') no-repeat;
+            filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+            -moz-background-size: 100% 100%;
+            background-size: 100% 100%;
+        }
+
+        .bg-border-box {
+            background: url('image/border.png') no-repeat;
+            filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+            -moz-background-size: 100% 100%;
+            background-size: 100% 100%;
         }
 
         .road-box-min {
             height: 350px;
-            border: 1px solid green;
+            /*border: 1px solid green;*/
         }
 
         .road-box-medium {
             height: 360px;
-            border: 1px solid green;
+            /*border: 1px solid green;*/
         }
 
         .road-box-big {
             height: 700px;
-            border: 1px solid green;
-        }
-
-        .road-nav-item-min {
-            width: 11.11%;
-            height: 46px;
-            min-width: 100px;
-            float: left;
-            border: 1px solid blue;
+            /*border: 1px solid green;*/
         }
 
         .road-nav-item-max {
-            width: 33.33%;
-            height: 46px;
+            width: 33.3%;
+            height: 40px;
             min-width: 200px;
             float: left;
-            border: 1px solid blue;
+        }
+
+        .bottom-row{
+            margin: auto 15px;
         }
     </style>
 </head>
@@ -118,37 +161,40 @@
 
     <div class="container-fluid">
         <div class="header">
-            <div class="row-fluid">
-                <div class="road-nav-item-min">
-                    菜单1
-                </div>
-                <div class="road-nav-item-min">
-                    菜单2
-                </div>
-                <div class="road-nav-item-min">
-                    菜单3
-                </div>
-                <div class="road-nav-item-max">
-                    随便一打就是十二个字标题
-                </div>
-                <div class="road-nav-item-min">
-                    菜单1
-                </div>
-                <div class="road-nav-item-min">
-                    菜单2
-                </div>
-                <div class="road-nav-item-min">
-                    菜单3
+            <div class="row-fluid road-nav-list">
+                <div class="">
+                    <div class="road-nav-item-min">
+                        <div class="col-md-10 bg-navitem-left">电子警察</div>
+                    </div>
+                    <div class="road-nav-item-min">
+                        <div class="col-md-10 bg-navitem-left">信号设施</div>
+                    </div>
+                    <div class="road-nav-item-min">
+                        <div class="col-md-10 bg-navitem-left">车流监控</div>
+                    </div>
+                    <div class="road-nav-item-max">
+                        <!--随便一打就是十二个字标题-->
+                    </div>
+                    <div class="road-nav-item-min ">
+                        <div class="col-md-10 bg-navitem-right">事件数据</div>
+                    </div>
+                    <div class="road-nav-item-min">
+                        <div class="col-md-10 bg-navitem-right">交通违法</div>
+                    </div>
+                    <div class="road-nav-item-min">
+                        <div class="col-md-10 bg-navitem-right">基础设施</div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="main">
             <div class="row-fluid">
                 <div class="col-md-3">
-                    <div class="col-md-12 road-box-min">
-                        我是info
+                    <div class="col-md-12 road-box-min bg-border-box">
+
+                        图
                     </div>
-                    <div class="col-md-12 road-box-medium">
+                    <div class="col-md-12 road-box-medium bg-border-box">
                         我是设施饼图
                     </div>
                 </div>
@@ -156,27 +202,27 @@
                     我是中间大图
                 </div>
                 <div class="col-md-3">
-                    <div class="col-md-12 road-box-min">
+                    <div class="col-md-12 road-box-min bg-border-box">
                         我是右侧线状图
                     </div>
-                    <div class="col-md-12 road-box-medium">
+                    <div class="col-md-12 road-box-medium bg-border-box">
                         我是状态饼图
                     </div>
                 </div>
             </div>
-            <div class="row-fluid">
-                <div class="col-md-3">
+            <div class="row-fluid bottom-row">
+                <div class="col-md-3 road-box-min bg-border-box">
                     交通违法柱状图
                 </div>
-                <div class="col-md-6">
-                    <div class="col-md-6">
+                <div class="col-md-6 ">
+                    <div class="col-md-6 road-box-min bg-border-box">
                         金科路图片
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 road-box-min bg-border-box">
                         紫薇路图片
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 road-box-min bg-border-box">
                     右下角交通饼图
                 </div>
             </div>
