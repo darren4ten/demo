@@ -55,6 +55,7 @@
         }
 
         .bg-border-box {
+            padding: 32px 2px;
             background: url('image/border.png') no-repeat;
             filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
             -moz-background-size: 100% 100%;
@@ -83,23 +84,25 @@
             float: left;
         }
 
-        .bottom-row{
+        .bottom-row {
             margin: auto 15px;
         }
 
-        .road-info-list{
+        .road-info-list {
             padding: 32px 2px;
-            color:#F5F5F3;
-        }
-         .road-info-list li{
-             margin: auto 10px;
-         }
-        .road-info-list a:hover{
-            color:#DEB420
+            color: #F5F5F3;
         }
 
-        .road-info-list a{
-            color:#F5F5F3
+        .road-info-list li {
+            margin: auto 10px;
+        }
+
+        .road-info-list a:hover {
+            color: #DEB420
+        }
+
+        .road-info-list a {
+            color: #F5F5F3
         }
     </style>
 </head>
@@ -216,7 +219,7 @@
                         </div>
                     </div>
                     <div class="col-md-12 road-box-medium bg-border-box">
-                        我是设施饼图
+                        <div id="pieChartBasicInfs" style="min-width:300px;height:300px"></div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -236,7 +239,7 @@
                     交通违法柱状图
                 </div>
                 <div class="col-md-6 ">
-                    <div class="col-md-6 road-box-min bg-border-box">
+                    <div class="col-md-6 road-box-min bg-border-box" style="margin:auto 0px;">
                         金科路图片
                     </div>
                     <div class="col-md-6 road-box-min bg-border-box">
@@ -262,6 +265,9 @@
 
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/controller/indexController.js"></script>
+
 </body>
 
 </html>
